@@ -38,7 +38,7 @@ function Signup() {
         if (!validateForm()) return;
 
         try {
-            const response = await axios.post("http://localhost:5000/signup", formData);
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/signup`, formData);
             toast.success(response.data.message);
             navigate("/login");
         } catch (error) {

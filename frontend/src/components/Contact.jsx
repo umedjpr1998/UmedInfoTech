@@ -24,7 +24,7 @@ function Contact() {
 
         if (formData.name && formData.email && formData.subject && formData.message) {
             try {
-                const response = await fetch('http://localhost:5000/send-email', {
+                const response = await fetch(`${process.env.REACT_APP_API_URL}/send-email`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
