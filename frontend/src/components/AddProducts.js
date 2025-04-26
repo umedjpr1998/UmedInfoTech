@@ -103,7 +103,7 @@ const AddProducts = () => {
             <button 
                 onClick={() => navigate('/')} 
                 className="btn btn-primary position-absolute" 
-                style={{ bottom: '20px', right: '20px' }}
+                style={{ bottom: '20px', right: '20px',margintom:'10px' }}
             >
                 Go to Home
             </button>
