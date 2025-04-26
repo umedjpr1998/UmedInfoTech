@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Home",
+        "path": "/",
+        "icon": "fa-solid fa-house"
+    },
+    {
+        "name": "About Us",
+        "path": "/about",
+        "icon": "fa-solid fa-info-circle"
+    },
+    {
+        "name": "Products",
+        "path": "/products",
+        "icon": "fa-solid fa-box"
+    },
+    {
+        "name": "Contact Us",
+        "path": "/contact",
+        "icon": "fa-solid fa-envelope"
+    },
+    {
+        "name": "FAQ's",
+        "path": "/faqs",
+        "icon": "fa-solid fa-question-circle"
+    }
+
+]

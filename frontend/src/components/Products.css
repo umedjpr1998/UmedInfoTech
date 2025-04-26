@@ -1,0 +1,34 @@
+/* Responsive tweaks */
+@media (max-width: 992px) {
+    .product-card {
+        width: 280px;
+        height: 480px;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-image {
+        height: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+}

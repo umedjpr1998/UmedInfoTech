@@ -1,0 +1,21 @@
+.homeimg {
+    width: 100%;
+    height: 92vh;
+    display: block;
+}
+
+
+
+/* Tablets */
+@media (max-width: 992px) {
+    .homeimg {
+        height: 50vh;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+    .homeimg {
+        height: 50vh;
+    }
+}

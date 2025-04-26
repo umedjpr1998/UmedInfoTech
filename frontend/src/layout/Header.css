@@ -1,0 +1,118 @@
+/* Header.css */
+
+.navbar-brand {
+    font-size: 25px;
+    color: #FF9D00 !important;
+    font-family: 'Lobster', cursive;
+    margin-left: 25px;
+}
+
+.nav-menu {
+    font-size: 20px;
+    margin-left: 130px;
+}
+
+.menu-btn {
+    margin-top: 2px;
+    height: 40px;
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF9D00;
+    border: none;
+    color: black;
+}
+
+.menu-btn.active {
+    color: white;
+}
+
+.icon-style {
+    margin-right: 8px;
+    color: black;
+}
+
+.icon-style.active-icon {
+    color: white;
+}
+
+.account-wrapper {
+    margin-left: 250px;
+}
+
+.account-btn {
+    margin-top: 2px;
+    height: 40px;
+    width: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: black !important;
+    background-color: #0011ff;
+}
+
+.account-btn.active {
+    color: white !important;
+}
+
+.account-icon {
+    margin-right: 6px;
+}
+
+/* ------------------ Responsive Styles ------------------ */
+@media (max-width: 1200px) {
+    .nav-menu {
+        margin-left: 80px;
+    }
+
+    .account-wrapper {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 1230px) {
+    .nav-menu {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-btn,
+    .account-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .account-wrapper {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-style {
+        font-size: 20px;
+    }
+
+    .menu-btn,
+    .account-btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-menu {
+        font-size: 16px;
+    }
+
+    .menu-btn,
+    .account-btn {
+        height: 38px;
+        width: 100%;
+    }
+
+    .brand-style {
+        font-size: 18px;
+    }
+}
