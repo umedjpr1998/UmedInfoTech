@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AddProducts = () => {
+    const navigate = useNavigate();
     const [product, setProduct] = useState({
         title: "",
         description: "",
@@ -59,7 +61,7 @@ const AddProducts = () => {
     };
 
     return (
-        <div className="container mt-5">
+        <div className="container mt-5 position-relative">
             <h2>Add New Product</h2>
             <form onSubmit={handleSubmit} encType="multipart/form-data">
                 <div className="mb-3">
@@ -96,6 +98,15 @@ const AddProducts = () => {
                 </div>
                 <button type="submit" className="btn btn-success">Add Product</button>
             </form>
+
+            {/* Go Home Button */}
+            <button 
+                onClick={() => navigate('/')} 
+                className="btn btn-primary position-absolute" 
+                style={{ bottom: '20px', right: '20px',margintom:'10px' }}
+            >
+                Go to Home
+            </button>
         </div>
     );
 };
