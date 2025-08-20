@@ -25,7 +25,7 @@ function Login() {
             setEmailError("");
         }
 
-        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d).{6,}$/; // ✅ Updated
         if (!password) {
             setPasswordError("Password is required!");
             isValid = false;
@@ -39,6 +39,7 @@ function Login() {
         return isValid;
     };
 
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -47,7 +48,7 @@ function Login() {
         }
 
         try {
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`, { email, password });
+            const response = await axios.post("http://localhost:5000/login", { email, password });
             console.log("API Response:", response.data);
 
             if (response.data?.success) {

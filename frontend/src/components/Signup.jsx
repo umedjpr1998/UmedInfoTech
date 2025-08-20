@@ -25,7 +25,13 @@ function Signup() {
         let newErrors = {};
         if (!formData.name) newErrors.name = "Name is required!";
         if (!formData.email) newErrors.email = "Email is required!";
-        if (!formData.password) newErrors.password = "Password is required!";
+        if (!formData.password) {
+            newErrors.password = "Password is required!";
+        } else if (!/^(?=.*[A-Za-z])(?=.*\d).{6,}$/.test(formData.password)) {
+            newErrors.password = "Password must be at least 6 characters & contain a number!";
+        }
+        
+
         if (formData.password !== formData.confirmPassword)
             newErrors.confirmPassword = "Passwords do not match!";
 
@@ -38,7 +44,7 @@ function Signup() {
         if (!validateForm()) return;
 
         try {
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/signup`, formData);
+            const response = await axios.post("http://localhost:5000/signup", formData);
             toast.success(response.data.message);
             navigate("/login");
         } catch (error) {

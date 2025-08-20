@@ -5,7 +5,7 @@ const Products = () => {
     const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_API_URL}/products`) // Fetch from MongoDB
+        fetch("http://localhost:5000/products") // Fetch from MongoDB
             .then((response) => response.json())
             .then((data) => setProducts(data))
             .catch((error) => console.error("Error loading products:", error));

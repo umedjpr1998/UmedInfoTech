@@ -56,7 +56,7 @@ function Footer() {
                             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                                 <FaTwitter />
                             </a><br></br>
-                            <a href="mailto:umedinfotech@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <a href="mailto:umedsinghrathore98@gmail.com" target="_blank" rel="noopener noreferrer">
                                 <FaEnvelope />
                             </a>
                         </div>

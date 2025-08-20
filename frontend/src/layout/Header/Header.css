@@ -16,6 +16,7 @@
     margin-top: 2px;
     height: 40px;
     width: 125px;
+    min-width: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +45,8 @@
 .account-btn {
     margin-top: 2px;
     height: 40px;
-    width: 105px;
+    width: 125px;
+    min-width: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +111,7 @@
     .menu-btn,
     .account-btn {
         height: 38px;
-        width: 100%;
+        min-width: 125px;
     }
 
     .brand-style {

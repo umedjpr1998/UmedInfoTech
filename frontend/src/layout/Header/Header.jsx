@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import menu from '../headermenu.json';
+import menu from '../../headermenu.json';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './Header.css'; // Import the CSS file
 
@@ -21,7 +21,7 @@ function Header() {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav text-center nav-menu">
+                    <ul className="navbar-nav nav-menu me-auto">
                         {menu.map((e, i) => (
                             <li className="nav-item mx-2" key={i}>
                                 <Link
